@@ -1,0 +1,61 @@
+.expanded-section {
+    display: none;
+}
+
+.expanded-section.expanded {
+    display: block;
+}
+
+.engine-makers-list {
+    list-style-type: none;
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    .expand-link{
+        display: inline-block;
+        background-color: #6d7ae0;
+        width: 400px;
+        height: 40px;
+        border: 2px solid #a0a5ff;
+        border-radius:20px;
+        text-align: center;
+        padding-top: 8px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+.pistons-table {
+    margin: 20px;
+    width: 1200px;
+
+    .table-head {
+        background-color: #6d7ae0;
+        color: #ffffff;
+        height: 50px;
+    }
+
+    td {
+        max-width: 200px;
+        padding: 20px 20px 0;
+    }
+
+    tr {
+        height: 40px;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    tr:hover {
+        background-color: #ecedff;
+    }
+
+    a {
+        display: block;
+        color: #8d8d8d;
+        text-decoration: none;
+    }
+
+}

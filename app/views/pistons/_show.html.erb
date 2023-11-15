@@ -1,0 +1,48 @@
+<table class="pistons-table">
+  <thead class="table-head">
+  <tr>
+    <th>Engine Types</th>
+    <th>Vehicle</th>
+    <th>Model Year</th>
+    <th>Fuel</th>
+    <th>Cubic Displacement</th>
+    <th>Cylinder Diameter</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% records.each do |record| %>
+    <tr>
+      <td>
+        <%= link_to '#', class: 'show-details-link', 'data-bs-toggle': 'modal', 'data-bs-target': '#pistonsModal', 'data-record-id': record.id do %>
+          <%= record.engine_types %>
+        <% end %>
+      </td>
+      <td>
+        <%= link_to '#', class: 'show-details-link', 'data-bs-toggle': 'modal', 'data-bs-target': '#pistonsModal', 'data-record-id': record.id do %>
+          <%= record.vehicle %>
+        <% end %>
+      </td>
+      <td>
+        <%= link_to '#', class: 'show-details-link', 'data-bs-toggle': 'modal', 'data-bs-target': '#pistonsModal', 'data-record-id': record.id do %>
+          <%= record.model_year %>
+        <% end %>
+      </td>
+      <td>
+        <%= link_to '#', class: 'show-details-link', 'data-bs-toggle': 'modal', 'data-bs-target': '#pistonsModal', 'data-record-id': record.id do %>
+          <%= record.fuel %>
+        <% end %>
+      </td>
+      <td>
+        <%= link_to '#', class: 'show-details-link', 'data-bs-toggle': 'modal', 'data-bs-target': '#pistonsModal', 'data-record-id': record.id do %>
+          <%= record.cubic_displacement %>
+        <% end %>
+      </td>
+      <td>
+        <%= link_to '#', class: 'show-details-link', 'data-bs-toggle': 'modal', 'data-bs-target': '#pistonsModal', 'data-record-id': record.id do %>
+          <%= record.cylinder_diameter %>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
